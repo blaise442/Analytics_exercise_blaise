@@ -49,5 +49,5 @@ We will do the following:
 - run `python3 manage.py migrate`
 - run `python3 manage.py load_patient_data`
 - run `python3 manage.py runserver`
-- load `http://127.0.0.1/query/` to view your results
+- load `http://127.0.0.1:8000/query/` to view your results
 - provide a review for your PR
