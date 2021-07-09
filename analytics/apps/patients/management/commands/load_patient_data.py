@@ -6,3 +6,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # TODO: load patient data from CSV into models
+        pass
