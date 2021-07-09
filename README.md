@@ -37,7 +37,7 @@ Complete the `TODO` in `analytics/apps/patients/views.py` to return the followin
 
 Annotate each set of aggregate statistics with the patient's ID and name.
 
-Run `python3 manage.py runserver` and load `http://127.0.0.1/query/` in your browser to test your queries. See Django's tutorial on the [development server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server) if you need help.
+Run `python3 manage.py runserver` and load `http://127.0.0.1:8000/query/` in your browser to test your queries. See Django's tutorial on the [development server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server) if you need help.
 
 ## Show your work
 
