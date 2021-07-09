@@ -7,7 +7,7 @@ import random
 import sys
 
 
-MINUTES_IN_TWO_DAYS = 2 * 24 * 60
+MINUTES_IN_ONE_DAY = 2 * 24 * 60
 
 
 logger = logging.getLogger(__name__)
@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 def gen_patient_data():
     patients = [("1", "Jane"), ("2", "John")]
     now = datetime.datetime.utcnow().replace(second=0, microsecond=0)
-    base_time = now - datetime.timedelta(minutes=MINUTES_IN_TWO_DAYS)
-    for minute in range(MINUTES_IN_TWO_DAYS):
+    base_time = now - datetime.timedelta(minutes=MINUTES_IN_ONE_DAY)
+    for minute in range(MINUTES_IN_ONE_DAY):
         event_time = base_time + datetime.timedelta(minutes=minute)
         event_time_iso8601 = f"{event_time.isoformat()}Z"
         for patient_id, patient_name in patients:
