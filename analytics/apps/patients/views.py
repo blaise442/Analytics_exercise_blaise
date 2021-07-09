@@ -6,4 +6,4 @@ def query(request):
 
     # TODO: query the DB and return results
 
-    return JsonResponse(data)
+    return JsonResponse(data, json_dumps_params=dict(indent=4, sort_keys=True))
